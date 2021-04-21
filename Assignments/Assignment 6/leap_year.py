@@ -1,5 +1,5 @@
 def leap_year(year):
-   if (year % 4 == 0):
+   if (year % 4 == 0) and not (year % 100== 0):
         return("Is a leap year")    
    else: 
         return("Is not a leap year")
