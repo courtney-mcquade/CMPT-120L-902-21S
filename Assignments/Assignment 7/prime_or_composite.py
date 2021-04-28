@@ -6,7 +6,7 @@ def prime_or_composite(number):
                     check = True
 
         if check:
-            return("Not Prime")
+            return("Composite")
         else: 
             return("Prime")
     
