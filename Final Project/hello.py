@@ -15,3 +15,6 @@ def index():
 def aboutme():
     return render_template('aboutme.html')
 
+@app.route('/resume/')
+def resume():
+    return render_template('resume.html')
