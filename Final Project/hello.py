@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Courtneys Website'
+    return render_templates('index2.html')
     
 
 @app.route('/aboutme/')
@@ -18,3 +18,7 @@ def aboutme():
 @app.route('/resume/')
 def resume():
     return render_template('resume.html')
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
